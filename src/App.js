@@ -1,8 +1,25 @@
+import logo from './logo.svg';
 import './App.css';
-import Toast from './Toast/Toast';
 
 function App() {
-  return <Toast isOpen onClose={() => {}} message="URL이 복사 되었습니다." duration={0} />;
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p className="text-blue-500">
+          4팀 화이팅!!
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React or TailwindCSS
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
