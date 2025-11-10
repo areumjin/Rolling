@@ -44,8 +44,9 @@ function Modal({
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+      className="fixed inset-0 z-50 flex items-center justify-center"
       onClick={handleBackdropClick}
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}
     >
       <div className="relative w-[600px] h-[476px] bg-white rounded-2xl shadow-[0px_2px_12px_rgba(0,0,0,0.08)]">
         {/* 헤더 영역 */}
